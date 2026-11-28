@@ -963,3 +963,13 @@ img {
     bottom: 18px;
   }
 }
+
+
+.brand-text strong {
+  color: var(--green);
+  font-size: 21px;
+}
+
+.brand-text strong span {
+  color: var(--orange);
+}
