@@ -14,14 +14,24 @@ export const SITE_CONFIG = {
 };
 
 
-// Validate Indian WhatsApp number before creating a link.
+
 export function getWhatsAppUrl(message) {
-  const number = SITE_CONFIG.whatsappNumber.replace(/\D/g, "");
+  const number = String(SITE_CONFIG.whatsappNumber || "")
+    .replace(/\D/g, "")
+    .trim();
+
+  console.log("WhatsApp number:", number);
+  console.log("Number length:", number.length);
+  console.log("Valid:", /^91[6-9]\d{9}$/.test(number));
 
   if (!/^91[6-9]\d{9}$/.test(number)) {
-    alert("Please configure a valid WhatsApp number in config.js.");
+    alert("Invalid WhatsApp number. Please check config.js.");
     return null;
   }
 
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
+
+
+
+
