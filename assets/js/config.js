@@ -4,7 +4,7 @@ export const SITE_CONFIG = {
 
   tagline: "Better Choices, Brighter Tomorrow.",
 
-  whatsappNumber: "91XXXXXXXXXX",
+  whatsappNumber: "917093218658",
 
   fssaiNumber: "23626026002068",
 
