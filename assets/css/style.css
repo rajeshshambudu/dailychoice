@@ -698,7 +698,7 @@ img {
 .cart-button {
   position: fixed;
   right: 22px;
-  bottom: 25px;
+  bottom: 100px;
   z-index: 150;
   width: 58px;
   height: 58px;
